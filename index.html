@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de estudiantes</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+</head>
+<body>
+    
+    <h1>REGISTRO DE ESTUDIANTES</h1>
+    </div>
+         
+    <section>
+        <!-- Titulo del detalle a llenar para el registro -->
+        <p class="text-center">Por favor ingrese su informacion a corde a cada campo</p>
+        <!-- Llenando los datos para el registro -->
+        <form class="container" id="registro-estudiante">
+            <div class="row">    
+                <label for="nombres">Ingrese sus nombres</label>
+                <input type="text" id="nombres" name="nombres" placeholder="Robert Brayan">
+                <div id="nombre-feedback" class="invalid-feedback">Ingrese sus nombres</div>
+            </div>
+            <div class="row">    
+                <label for="apellidos">Ingrese sus Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ycaza Legua">
+            </div>
+            <div class="row">    
+                <label for="direccion">Ingrese dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Urb. Callao 123 - La Perla - Callao">
+            </div>
+            <div class="row">    
+                <label for="correo">Ingrese su dirección de correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@dominio.com">
+            </div>
+            <div class="row">    
+                <label for="celular">Ingrese su número de celular</label>
+                <input type="number" id="celular" name="celular" placeholder="999888555">
+            </div>
+            <br>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" value="Registrar" type="submit">Registrar</button>
+            </div>
+            <!-- <div class="alert alert-danger" role="alert"> -->
+                <div class="contenedor" ></div>
+            <!-- </div>   -->
+            
+        </form>
+        <hr>
+        <!-- Imprimiendo datos --> 
+        <table class="table text-center" id="lista_estudiantes">
+            <!--Armando titulos  -->
+            <thead>
+              <tr>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Celular</th>
+              </tr>
+            </thead>
+            <!--Imprimiendo datos  -->
+            <tbody class="table-group-divider" >
+
+            </tbody>
+          </table>
+    </section>
+    <script src="js/registro.js"></script>
+ 
+</body>
+</html>
